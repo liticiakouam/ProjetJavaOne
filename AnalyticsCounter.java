@@ -8,9 +8,9 @@ public class AnalyticsCounter {
 
 	public static void main(String args[]) throws IOException {
 
-		//ecriture dans le fichier de sortie
-		ISymptomWrite symptomWrite = new WriteSymptomDataToFile("result.out");
-		symptomWrite.writeToFile(symptomsWithOccurrences);
+		//lecture des symptomes
+		ISymptomReader symptomReader = new ReadSymptomDataFromFile("symptoms.txt");
+		List<String> symptoms = symptomReader.getSymptoms();
 
 	}
 }
