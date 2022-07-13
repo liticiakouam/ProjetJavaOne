@@ -19,15 +19,5 @@ public class AnalyticsCounter {
 		ISymptomWrite symptomWrite = new WriteSymptomDataToFile("result.out");
 		symptomWrite.writeToFile(symptomsWithOccurrences);
 
-		/*for (String symptom : symptoms) {
-			int occurrences = 1;
-			if(symptomsMap.containsKey(symptom)) {
-				occurrences = symptomsMap.get(symptom);
-				occurrences++;
-			}
-			symptomsMap.put(symptom, occurrences);
-		}*/
-
-
 	}
 }
